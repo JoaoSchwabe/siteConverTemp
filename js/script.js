@@ -8,12 +8,17 @@ function converter(){
         valorK = (parseFloat(valor)+273.15)
         valorR = (parseFloat(valor)+273.15)*1.8;
         document.getElementById('celsius').style.display = "none";
+        document.getElementById('kelvin').style.display = "block";
+        document.getElementById('fahrenheit').style.display = "block";
+        document.getElementById('rankine').style.display = "block";
     } else if(opcao=='f'){
         valorC = (parseFloat(valor)-32)/1.8;
         valorK = parseFloat(valor-32)*(5/9) +273;
         valorR = (parseFloat(valor)+459.67);
         document.getElementById('celsius').style.display = "block";
         document.getElementById('fahrenheit').style.display = "none";
+        document.getElementById('kelvin').style.display = "block";
+        document.getElementById('rankine').style.display = "block";
     }else if(opcao=='k'){
         valorC = (parseFloat(valor)-273);
         valorF = ((parseFloat(valor)-273)*1.8)+32;
@@ -21,11 +26,13 @@ function converter(){
         document.getElementById('celsius').style.display = "block";
         document.getElementById('fahrenheit').style.display = "block";
         document.getElementById('kelvin').style.display = "none";
+        document.getElementById('rankine').style.display = "block";
     }else if(opcao=='r'){
         valorC = (parseFloat(valor)/8)-273.15;
         valorF = (parseFloat(valor)-459.67);
         valorK = (parseFloat(valor)/1.8);
         document.getElementById('celsius').style.display = "block";
+        document.getElementById('fahrenheit').style.display = "block";
         document.getElementById('kelvin').style.display = "block";
         document.getElementById('rankine').style.display = "none";
     }   
