@@ -1,14 +1,9 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    margin: 0 auto;
-    width: auto;
     display: table;
-    text-align: center;
     padding-top: 2vw;
 }
 body{
@@ -21,12 +16,11 @@ h1{
 #opcao{
     margin-top: 2vw;
     text-align: center;
-    margin-left: 17vh;
 }
 #calcular{
     margin-top:2%;
     padding: 15px;
-    font-size: 25px;
+    font-size: 18px;
     background-color: #ffffff;
 }
 #calcular.hover{
